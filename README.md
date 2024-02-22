@@ -10,17 +10,17 @@ Este é um projeto de exemplo que ilustra o uso de diferentes tipos de relaciona
   
    **
    - CREATE TABLE posts (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255),
-    content TEXT
+   - id INT AUTO_INCREMENT PRIMARY KEY,
+   - title VARCHAR(255),
+   - content TEXT
 );
 
-CREATE TABLE comments (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    author VARCHAR(255),
-    content TEXT,
-    id_post INT,
-    FOREIGN KEY (id_post) REFERENCES posts(id)
+   - CREATE TABLE comments (
+    - id INT AUTO_INCREMENT PRIMARY KEY,
+    - author VARCHAR(255),
+    - content TEXT,
+    - id_post INT,
+    - FOREIGN KEY (id_post) REFERENCES posts(id)
 );
 **
 3. **Many-to-Many (Muitos para Muitos):**
