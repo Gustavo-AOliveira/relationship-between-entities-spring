@@ -2,6 +2,7 @@ package br.com.project2.relacionamento.entities.Comment;
 
 import br.com.project2.relacionamento.entities.Post.Post;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public record CommentRequestDTO(
 
@@ -9,7 +10,7 @@ public record CommentRequestDTO(
         String author,
         @NotBlank
         String content,
-        @NotBlank
+        @NotNull
         Post post
 ) {
 }
