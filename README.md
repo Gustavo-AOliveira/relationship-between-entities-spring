@@ -8,6 +8,7 @@ Este é um projeto de exemplo que ilustra o uso de diferentes tipos de relaciona
 2. **Many-to-One (Muitos para Um):**
    - Implementação de um relacionamento Many-to-One entre duas entidades, onde várias instâncias de uma entidade podem estar associadas a uma única instância da outra entidade.
   
+   **
    - CREATE TABLE posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255),
@@ -21,6 +22,6 @@ CREATE TABLE comments (
     id_post INT,
     FOREIGN KEY (id_post) REFERENCES posts(id)
 );
-
+**
 3. **Many-to-Many (Muitos para Muitos):**
    - Exemplo prático de um relacionamento Many-to-Many entre duas entidades, mostrando como configurar e utilizar esse tipo de relacionamento.
