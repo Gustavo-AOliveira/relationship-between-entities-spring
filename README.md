@@ -13,7 +13,10 @@ Este é um projeto de exemplo que ilustra o uso de diferentes tipos de relaciona
    - id INT AUTO_INCREMENT PRIMARY KEY,
    - title VARCHAR(255),
    - content TEXT
+
 );
+
+___________________________________________________
 
    - CREATE TABLE comments (
     - id INT AUTO_INCREMENT PRIMARY KEY,
